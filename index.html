@@ -28,7 +28,7 @@
                 <a href="#features" class="hover:text-indigo-600 transition">ฟีเจอร์</a>
                 <a href="#benefits" class="hover:text-indigo-600 transition">ประโยชน์</a>
                 <a href="#pricing" class="hover:text-indigo-600 transition">ราคา</a>
-                <a href="./page1.html" class="hover:text-indigo-600 transition">page1</a>
+                <a id="_text1" href="./page1.html" class="hover:text-indigo-600 transition">page1</a>
             </nav>
 
             <div class="hidden md:flex items-center space-x-4">
@@ -284,6 +284,28 @@
             <p class="text-sm text-slate-400">&copy; 2026 BRANDLOGO. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        var text_list = {
+            text1: "Alice",
+            age: 28
+        };
 
+        var text1 = "change text here"
+
+        for (const key in text_list) {
+            if (Object.hasOwn(text_list, key)) {
+                console.log(`${key}: ${text_list[key]}`);
+                let element = document.getElementById(`_${key}`);
+                if (element) {
+                    element.innerHTML = text_list[key];
+                }
+               
+            }
+        }
+
+       // document.getElementById("_text1").innerHTML = text_list["text1"];
+
+    </script>
 </body>
+
 </html>
