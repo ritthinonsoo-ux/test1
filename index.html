@@ -286,11 +286,10 @@
     </footer>
     <script>
         var text_list = {
-            text1: "Alice",
-            age: 28
+         
         };
 
-        var text1 = "change text here"
+        loadUserData();
 
         for (const key in text_list) {
             if (Object.hasOwn(text_list, key)) {
@@ -303,7 +302,29 @@
             }
         }
 
+
        // document.getElementById("_text1").innerHTML = text_list["text1"];
+
+        async function loadUserData() {
+            try {
+                // 1. Send the network request
+                const response = await fetch('./base.json');
+
+                // 2. Validate the network response status
+                if (!response.ok) {
+                    throw new Error(`Network response error: ${response.status}`);
+                }
+
+                // 3. Extract and parse the JSON payload
+                const data = await response.json();
+                console.log(data);
+                text_list = data;
+
+            } catch (error) {
+                // Handle network interruptions or invalid JSON formatting
+                console.error('Failed to load JSON file:', error);
+            }
+        }
 
     </script>
 </body>
