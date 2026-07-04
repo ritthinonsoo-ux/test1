@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page สุดโมเดิร์น</title>
+    <!-- นำเข้า Tailwind CSS สำหรับการจัดหน้าและดีไซน์ที่รองรับ Responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- นำเข้า Google Fonts (Noto Sans Thai) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Thai', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+    Page1
+    <!-- Navbar (แถบเมนูด้านบน) -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="text-2xl font-bold text-indigo-600 tracking-tight">BRANDLOGO</div>
+
+            <!-- เมนูสำหรับหน้าจอใหญ่ (บนมือถือจะซ่อนไว้ก่อน) -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#features" class="hover:text-indigo-600 transition">ฟีเจอร์</a>
+                <a href="#benefits" class="hover:text-indigo-600 transition">ประโยชน์</a>
+                <a href="#pricing" class="hover:text-indigo-600 transition">ราคา</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="text-sm font-medium text-slate-600 hover:text-slate-900">เข้าสู่ระบบ</a>
+                <a href="#" class="bg-indigo-600 text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-indigo-700 transition shadow-sm shadow-indigo-200">เริ่มใช้งานฟรี</a>
+            </div>
+
+            <!-- ปุ่มเปิดเมนูสำหรับมือถือ -->
+            <button class="md:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section (ส่วนหัวดึงดูดสายตา) -->
+    <section class="relative overflow-hidden pt-20 pb-16 lg:pt-32 lg:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
+
+                <!-- ข้อความฝั่งซ้าย -->
+                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 mb-6">
+                        ✨ เปิดตัวฟีเจอร์ใหม่ล่าสุดเวอร์ชัน 2026
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-none">
+                        ยกระดับธุรกิจคุณด้วย <span class="text-indigo-600 block sm:inline">ระบบอัจฉริยะ</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-500 leading-relaxed">
+                        เบื่อไหมกับการทำงานซ้ำซ้อน? เครื่องมือของเราจะช่วยลดเวลาการทำงานของคุณลงครึ่งหนึ่ง เพิ่มประสิทธิภาพให้ทีม และสร้างยอดขายให้เติบโตอย่างมั่นคง
+                    </p>
+                    <div class="mt-10 sm:flex sm:justify-center lg:justify-start gap-4">
+                        <a href="#" class="block w-full sm:w-auto bg-indigo-600 text-white text-center font-medium px-8 py-4 rounded-xl hover:bg-indigo-700 transition shadow-lg shadow-indigo-200 mb-3 sm:mb-0">
+                            ทดลองใช้ฟรี 14 วัน
+                        </a>
+                        <a href="#" class="block w-full sm:w-auto bg-white border border-slate-200 text-slate-700 text-center font-medium px-8 py-4 rounded-xl hover:bg-slate-50 transition">
+                            ดูวิดีโอแนะนำตัวอย่าง
+                        </a>
+                    </div>
+                </div>
+
+                <!-- รูปภาพ/กราฟิกฝั่งขวา -->
+                <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-span-6">
+                    <div class="relative mx-auto w-full max-w-md lg:max-w-none">
+                        <div class="aspect-video lg:aspect-square bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-3xl shadow-2xl flex items-center justify-center p-8 transform lg:rotate-2 hover:rotate-0 transition duration-500">
+                            <span class="text-white font-medium text-lg opacity-80">[ ใส่ภาพหน้าจอ Dashboard หรือผลิตภัณฑ์ของคุณตรงนี้ ]</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (จุดเด่นและฟีเจอร์) -->
+    <section id="features" class="py-16 lg:py-24 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">ทำไมแบรนด์ชั้นนำถึงเลือกใช้เรา?</h2>
+                <p class="mt-4 text-slate-500">ทุกฟีเจอร์ออกแบบมาจากการวิเคราะห์พฤติกรรมการใช้งานจริง เพื่อให้คุณทำงานได้ง่ายที่สุด</p>
+            </div>
+
+            <!-- การ์ดฟีเจอร์ (รองรับ Responsive: 1 คอลัมน์บนมือถือ, 3 คอลัมน์บนคอม) -->
+            <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- การ์ด 1 -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl hover:bg-white transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500 flex items-center justify-center text-white text-xl mb-6">⚡</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">ทำงานรวดเร็ว</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">ประมวลผลข้อมูลขนาดใหญ่ได้ในเสี้ยววินาทีด้วยระบบ Cloud Native ที่ทันสมัยที่สุด</p>
+                </div>
+
+                <!-- การ์ด 2 -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl hover:bg-white transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500 flex items-center justify-center text-white text-xl mb-6">🔒</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">ปลอดภัยขั้นสูง</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">ปกป้องข้อมูลธุรกิจของคุณด้วยการเข้ารหัสแบบ End-to-End ได้มาตรฐานระดับสากล</p>
+                </div>
+
+                <!-- การ์ด 3 -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl hover:bg-white transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500 flex items-center justify-center text-white text-xl mb-6">📊</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">รายงานวิเคราะห์ผล</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">สรุปผลลัพธ์เข้าใจง่ายผ่านกราฟิกดีไซน์สวยงาม ช่วยให้คุณตัดสินใจทางธุรกิจไม่พลาด</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (กระตุ้นการตัดสินใจ) -->
+    <section class="py-16 bg-slate-900 text-white overflow-hidden relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">พร้อมที่จะเปลี่ยนผ่านธุรกิจของคุณแล้วหรือยัง?</h2>
+            <p class="mt-4 text-slate-400 max-w-xl mx-auto text-lg">เข้าร่วมกับผู้ประกอบการกว่า 10,000+ รายที่มอบความไว้วางใจให้เราช่วยดูแลระบบ</p>
+            <div class="mt-10">
+                <a href="#" class="inline-block bg-white text-slate-950 font-semibold px-8 py-4 rounded-xl hover:bg-slate-100 transition shadow-lg">
+                    สมัครสมาชิกและเริ่มใช้ฟรีวันนี้
+                </a>
+            </div>
+        </div>
+        <!-- ตกแต่งพื้นหลังเล็กน้อย -->
+        <div class="absolute inset-0 bg-indigo-900/20 mix-blend-multiply"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-200/60 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="text-xl font-bold text-slate-900">BRANDLOGO</div>
+            <p class="text-sm text-slate-400">&copy; 2026 BRANDLOGO. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page สุดโมเดิร์น</title>
+    <!-- นำเข้า Tailwind CSS สำหรับการจัดหน้าและดีไซน์ที่รองรับ Responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- นำเข้า Google Fonts (Noto Sans Thai) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Thai', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navbar (แถบเมนูด้านบน) -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="text-2xl font-bold text-indigo-600 tracking-tight">BRANDLOGO</div>
+
+            <!-- เมนูสำหรับหน้าจอใหญ่ (บนมือถือจะซ่อนไว้ก่อน) -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#features" class="hover:text-indigo-600 transition">ฟีเจอร์</a>
+                <a href="#benefits" class="hover:text-indigo-600 transition">ประโยชน์</a>
+                <a href="#pricing" class="hover:text-indigo-600 transition">ราคา</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="text-sm font-medium text-slate-600 hover:text-slate-900">เข้าสู่ระบบ</a>
+                <a href="#" class="bg-indigo-600 text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-indigo-700 transition shadow-sm shadow-indigo-200">เริ่มใช้งานฟรี</a>
+            </div>
+
+            <!-- ปุ่มเปิดเมนูสำหรับมือถือ -->
+            <button class="md:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section (ส่วนหัวดึงดูดสายตา) -->
+    <section class="relative overflow-hidden pt-20 pb-16 lg:pt-32 lg:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
+
+                <!-- ข้อความฝั่งซ้าย -->
+                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 mb-6">
+                        ✨ เปิดตัวฟีเจอร์ใหม่ล่าสุดเวอร์ชัน 2026
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-none">
+                        ยกระดับธุรกิจคุณด้วย <span class="text-indigo-600 block sm:inline">ระบบอัจฉริยะ</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-500 leading-relaxed">
+                        เบื่อไหมกับการทำงานซ้ำซ้อน? เครื่องมือของเราจะช่วยลดเวลาการทำงานของคุณลงครึ่งหนึ่ง เพิ่มประสิทธิภาพให้ทีม และสร้างยอดขายให้เติบโตอย่างมั่นคง
+                    </p>
+                    <div class="mt-10 sm:flex sm:justify-center lg:justify-start gap-4">
+                        <a href="#" class="block w-full sm:w-auto bg-indigo-600 text-white text-center font-medium px-8 py-4 rounded-xl hover:bg-indigo-700 transition shadow-lg shadow-indigo-200 mb-3 sm:mb-0">
+                            ทดลองใช้ฟรี 14 วัน
+                        </a>
+                        <a href="#" class="block w-full sm:w-auto bg-white border border-slate-200 text-slate-700 text-center font-medium px-8 py-4 rounded-xl hover:bg-slate-50 transition">
+                            ดูวิดีโอแนะนำตัวอย่าง
+                        </a>
+                    </div>
+                </div>
+
+                <!-- รูปภาพ/กราฟิกฝั่งขวา -->
+                <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-span-6">
+                    <div class="relative mx-auto w-full max-w-md lg:max-w-none">
+                        <div class="aspect-video lg:aspect-square bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-3xl shadow-2xl flex items-center justify-center p-8 transform lg:rotate-2 hover:rotate-0 transition duration-500">
+                            <span class="text-white font-medium text-lg opacity-80">[ ใส่ภาพหน้าจอ Dashboard หรือผลิตภัณฑ์ของคุณตรงนี้ ]</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (จุดเด่นและฟีเจอร์) -->
+    <section id="features" class="py-16 lg:py-24 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">ทำไมแบรนด์ชั้นนำถึงเลือกใช้เรา?</h2>
+                <p class="mt-4 text-slate-500">ทุกฟีเจอร์ออกแบบมาจากการวิเคราะห์พฤติกรรมการใช้งานจริง เพื่อให้คุณทำงานได้ง่ายที่สุด</p>
+            </div>
+
+            <!-- การ์ดฟีเจอร์ (รองรับ Responsive: 1 คอลัมน์บนมือถือ, 3 คอลัมน์บนคอม) -->
+            <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- การ์ด 1 -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl hover:bg-white transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500 flex items-center justify-center text-white text-xl mb-6">⚡</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">ทำงานรวดเร็ว</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">ประมวลผลข้อมูลขนาดใหญ่ได้ในเสี้ยววินาทีด้วยระบบ Cloud Native ที่ทันสมัยที่สุด</p>
+                </div>
+
+                <!-- การ์ด 2 -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl hover:bg-white transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500 flex items-center justify-center text-white text-xl mb-6">🔒</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">ปลอดภัยขั้นสูง</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">ปกป้องข้อมูลธุรกิจของคุณด้วยการเข้ารหัสแบบ End-to-End ได้มาตรฐานระดับสากล</p>
+                </div>
+
+                <!-- การ์ด 3 -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl hover:bg-white transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500 flex items-center justify-center text-white text-xl mb-6">📊</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">รายงานวิเคราะห์ผล</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">สรุปผลลัพธ์เข้าใจง่ายผ่านกราฟิกดีไซน์สวยงาม ช่วยให้คุณตัดสินใจทางธุรกิจไม่พลาด</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (กระตุ้นการตัดสินใจ) -->
+    <section class="py-16 bg-slate-900 text-white overflow-hidden relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">พร้อมที่จะเปลี่ยนผ่านธุรกิจของคุณแล้วหรือยัง?</h2>
+            <p class="mt-4 text-slate-400 max-w-xl mx-auto text-lg">เข้าร่วมกับผู้ประกอบการกว่า 10,000+ รายที่มอบความไว้วางใจให้เราช่วยดูแลระบบ</p>
+            <div class="mt-10">
+                <a href="#" class="inline-block bg-white text-slate-950 font-semibold px-8 py-4 rounded-xl hover:bg-slate-100 transition shadow-lg">
+                    สมัครสมาชิกและเริ่มใช้ฟรีวันนี้
+                </a>
+            </div>
+        </div>
+        <!-- ตกแต่งพื้นหลังเล็กน้อย -->
+        <div class="absolute inset-0 bg-indigo-900/20 mix-blend-multiply"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-200/60 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="text-xl font-bold text-slate-900">BRANDLOGO</div>
+            <p class="text-sm text-slate-400">&copy; 2026 BRANDLOGO. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
